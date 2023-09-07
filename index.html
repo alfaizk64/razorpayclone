@@ -61,8 +61,8 @@
     
     <!-- header -->
     <header class="w-full ">
-      <nav class="bg-deepBlue max-[480px]:h-20 max-[480px]:pt-8 w-full">
-        <div class="nav-bar  relative flex w-full max-[480px]:justify-center max-[480px]:items-center  items-center max-w-[1080px] mx-auto">
+      <nav class="bg-deepBlue max-[480px]:h-20 max-[480px]:pt-8 max-[768px]:h-20 max-[768px]:pt-8 w-full">
+        <div class="nav-bar  relative flex w-full max-[480px]:justify-center max-[480px]:items-center max-[768px]:justify-center  items-center max-w-[1080px] mx-auto">
           <!-- logo razorpay-->
           <div class="img max-[480px]:hidden pr-7">
             <a href="#" class="">
@@ -78,7 +78,7 @@
           <!-- logo end -->
 
           <!-- navigations -->
-          <div class="nav-links max-[480px]:hidden pr-7">
+          <div class="nav-links max-[480px]:hidden max-[768px]:hidden pr-7">
             <ul class="flex gap-6 text-white">
               <div class="link relative">
                 <li
@@ -176,10 +176,10 @@
     <!-- header end -->
     <!-- hero section -->
     <section class="hero_section relative w-full bg-deepBlue">
-      <div class="hero_container relative flex max-[480px]:flex-col max-[480px]:p-8  lg:items-center justify-between max-w-[1080px] mx-auto">
+      <div class="hero_container relative flex max-[480px]:flex-col max-[480px]:p-8 max-[768px]:flex-col   lg:items-center justify-between max-w-[1080px] mx-auto">
         <!-- left content -->
-        <div class="text-content text-white max-[480px]:max-w-[300px] flex flex-col gap-8 max-w[440px]:">
-          <h1 class="font-mullish font-bold text-4xl leading-[1.2]">
+        <div class="text-content text-white max-[480px]:max-w-[300px] max-[768px]:pl-3  flex flex-col gap-8 max-w[440px]:">
+          <h1 class="font-mullish font-bold text-4xl   leading-[1.2]">
             Power your finance, grow your business
           </h1>
           <div class="w-6 h-1 bg-greenLight"></div>
@@ -187,7 +187,7 @@
             Accept payments from customers. Automate payouts to vendors &
             employees. Never run out of working capital.
           </p>
-          <div class="signup_btn relative">
+          <div class="signup_btn relative ">
             <a
               class="relative bg-lightBlue rounded-md font-mullish font-bold py-3.5 pl-4 pr-9 hover:bg-lightBlue500 transition-all duration-200"
               href=""
@@ -196,7 +196,7 @@
           </div>
         </div>
         <!-- right content image -->
-        <div class="image_hero max-[480px]:max-w-[300px]   max-[480px]:mt-4 max-w[680px]">
+        <div class="image_hero max-[480px]:max-w-[300px] max-[768px]:w-full  max-[480px]:mt-4 max-w[680px]">
           <img
             src="./assets/images/hero-illustration.jpg"
             class=""
@@ -216,7 +216,7 @@
     <section class="feature_section overflow-hidden relative mt-[190px] w-full">
       <!-- dot image -->
       <img
-        class="dot_img1 absolute max-[480px]:hidden -top-[8rem] left-[10rem]"
+        class="dot_img1 absolute max-[480px]:hidden max-[768px]:hidden -top-[8rem] left-[10rem]"
         src="assets/images/feature-section1-dottedrows.png"
         loading="lazy"
         width="233"
@@ -224,7 +224,8 @@
         alt=""
       />
       <img
-        class="dot_img2 max-[480px]:hidden absolute right-0 top-[3rem] rotate-180"
+        class="dot_img2 max-[480px]:hidden max-[768px]:hidden
+         absolute right-0 top-[3rem] rotate-180"
         src="assets/images/feature-section1-dottedrows.png"
         loading="lazy"
         width="233"
@@ -239,9 +240,9 @@
         </h2>
         <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
         <!-- content box -->
-        <div class="w-full flex max-[480px]:flex-col max-[480px]:h-auto lg:flex-row rounded-md border mt-[5.5rem] my-16 bg-white z-20 relative max-[480px]:p-0 p-10 py-12 min-h-[520px] border-lightGray">
+        <div class="w-full flex max-[480px]:flex-col max-[768px]:flex-col max-[768px]:h-auto max-[480px]:h-auto lg:flex-row rounded-md border mt-[5.5rem] my-16 bg-white z-20 relative max-[480px]:p-0 max-[768px]:p-0 p-10 py-12 min-h-[520px] border-lightGray">
           <!-- left section -->
-          <div class="left max-[480px]:p-4 flex flex-col justify-between">
+          <div class="left max-[480px]:p-4 max-[768px]:p-6  flex flex-col justify-between">
             <h3
               class="font-mullish text-[28px] leading-10 font-bold max-w-[500px]"
             >
@@ -274,7 +275,7 @@
                 ><span>In-depth Reporting and Insights</span>
               </li>
             </ul>
-            <div class="btn_grp items-center max-[480px]:items-start  max-[480px]:flex-col  max-[480px]:mt-6  max-[480px]:gap-6 flex gap-4">
+            <div class="btn_grp items-center max-[480px]:items-start  max-[480px]:flex-col  max-[480px]:mt-6 max-[768px]:mt-6  max-[480px]:gap-6 flex gap-4">
               <div class="signup-btn-feature relative">
                 <a
                   href=""
@@ -299,13 +300,13 @@
           <img
             src="assets/images/payment-suite.png"
             alt=""
-            class="absolute max-w-[600px]  max-[480px]:relative  h-full right-0 bottom-0"
+            class="absolute max-w-[600px]  max-[480px]:relative max-[768px]:relative  h-full right-0 bottom-0"
           />
         </div>
         <!-- Card section start here -->
-             <div class="card_section w-full grid grid-cols-3 overflow-hidden max-[480px]:grid-cols-1 mb-2 gap-4">
+             <div class="card_section w-full grid grid-cols-3 overflow-hidden max-[480px]:grid-cols-1 max-[768px]:grid-cols-1 mb-2 gap-4">
                                         <!-- box 1 -->
-                 <div class="box group w-full min-h-[15rem] relative cursor-pointer hover: transition-all duration-200 ">
+                 <div class="box group w-full  min-h-[15rem] relative cursor-pointer hover: transition-all duration-200 ">
                         <img src="assets/images/payment-link-icon.svg" alt="" class=" cardicon absolute top-3 group-hover:bg-lightBlue300 right-3 h-12 w-12 transition-all duration-200 rounded-full bg-lightBlue">
                         <!-- box shape -->
                         <svg
@@ -336,7 +337,7 @@
                         <div >
                             <!-- text -->
                             <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Payments Link</h3>
-                             <p class="font-mullish text-grayText mt-6 ">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately</p>
+                             <p class="font-mullish text-grayText  mt-6 ">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately</p>
                         </div>
                         <div class=" flex gap-2 items-center">
                             <a
@@ -608,7 +609,7 @@
     <!-- features sections ends -->
     <!-- banking section -->
 
-<section class="business_banking  max-[480px]:pt-24 pt-[16rem] max-[480px]:pb-[100px] pb-[500px] mt-14  overflow-hidden w-full">
+<section class="business_banking max-[768px]:pt-24 max-[480px]:pt-24 pt-[16rem] max-[480px]:pb-[100px] max-[768px]:pb-[250px] pb-[500px] mt-14  overflow-hidden w-full">
     <!-- center div -->
     <div class="business_banking_container relative w-11/12 max-w-[1080px] pt-4 mx-auto">
                 <!-- heading -->
@@ -619,11 +620,11 @@
                     <!-- right img -->
                     <img src="assets/images/x-flame-1.png" loading="lazy" alt="" class="absolute max-[480px]:hidden -top-[59px] -left-[134px] w-[200px]">
                    <!-- left img -->
-                    <img src="assets/images/x-flame-2.png" loading="lazy" alt="" class="absolute max-[480px]:hidden top-[280px] -right-[170px] w-[250px]">
+                    <img src="assets/images/x-flame-2.png" loading="lazy" alt="" class="absolute max-[480px]:hidden top-[280px] max-[768px]:-top-[189px] max-[768px]:-right-[101px] -right-[170px] w-[250px]">
                     <!-- content box  -->
-                    <div class="w-full flex max-[480px]:flex-col max-[480px]:gap-y-4 rounded-md border max-[480px]:mt-[2.5rem] mt-[5.5rem] my-16 text-white z-20 relative max-[480px]:p-0 p-10 py-12 min-h-[490px] border-grayText border-opacity-50 bg-[#181c2e]">
+                    <div class="w-full flex max-[480px]:flex-col max-[480px]:gap-y-4 max-[768px]:gap-y-4 max-[768px]:flex-col  rounded-md border max-[480px]:mt-[2.5rem] mt-[5.5rem] my-16 text-white z-20 relative max-[480px]:p-0 max-[768px]:p-0 p-10 py-12 min-h-[490px] border-grayText border-opacity-50 bg-[#181c2e]">
                          <!-- left section -->
-                         <div class="left flex flex-col z-20 justify-between max-[480px]:p-4">
+                         <div class="left flex flex-col z-20 justify-between max-[480px]:p-4 max-[768px]:p-4">
                   <h3
                     class="font-mullish text-[28px] leading-10 font-bold max-w-[500px]"
                   >
@@ -649,7 +650,9 @@
                     </li>
                     
                   </ul>
-                  <div class="btn_grp items-center max-[480px]:flex-col max-[480px]:mt-8 max-[480px]:items-start flex max-[480px]:gap-6 gap-4">
+                  <!-- btn group -->
+                  <div class="btn_grp items-center max-[480px]:flex-col max-[480px]:mt-8 max-[768px]:mt-8 max-[480px]:items-start flex max-[480px]:gap-6 gap-4">
+                    <!-- signup btn -->
                     <div class="signup-btn-banking  relative">
                       <a
                         href=""
@@ -675,14 +678,14 @@
                            src="assets/images/buisness-banking.png"
                            alt=""
                            loading="lazy"
-                           class="absolute max-[480px]:relative max-[480px]:mt-3 max-w-[600px] h-full right-0 bottom-0"
+                           class="absolute max-[480px]:relative max-[480px]:mt-3 max-[768px]:relative max-[768px]:w-full max-w-[600px] h-full right-0 bottom-0"
                          />
                 
                     </div>
               </div>
                  <!-- card banking section -->
                    
-                 <div class="card_section2 w-full grid grid-cols-3 max-[480px]:grid-cols-1 overflow-hidden  flex-wrap mb-2 gap-10">
+                 <div class="card_section2 w-full grid grid-cols-3 max-[480px]:grid-cols-1 max-[768px]:grid-cols-1 overflow-hidden  flex-wrap mb-2 gap-10">
                     <!-- box 1 -->
                            <div class="box2  group w-full min-h-[15rem]  relative cursor-pointer hover: transition-all duration-200 ">
     <img src="assets/images/current-icon.svg" alt="" class=" cardicon absolute top-3 group-hover:bg-lightBlue300 right-3 h-12 w-12 transition-all duration-200 rounded-full bg-lightBlue">
@@ -845,14 +848,15 @@ fill="#fff"
     </div>
 </section>
     <!-- banking section ends here -->
+
+
     <!-- banking2 starts from here-->
-
-
     <section class="banking2 w-full relative pb-24">
         <div class="banking2_container relative w-11/12 max-w-[1080px] mx-auto">
-            <img src="assets/images/feature-section1-dottedrows.png" class="absolute max-[480px]:hidden  w-[233px] -z-10 -top-24 left-[300px]" loading="lazy" alt="">
-            <img src="assets/images/feature-section1-dottedrows.png" class="absolute max-[480px]:hidden  w-[233px] -z-10 -top-24 -right-14 " loading="lazy" alt="">
-            <div class="banking2_cards w-full grid grid-cols-3 max-[480px]:grid-cols-1 gap-x-4 gap-y-10">
+            <img src="assets/images/feature-section1-dottedrows.png" class="absolute max-[768px]:hidden max-[480px]:hidden  w-[233px] -z-10 -top-24 left-[300px]" loading="lazy" alt="">
+            <img src="assets/images/feature-section1-dottedrows.png" class="absolute max-[768px]:hidden max-[480px]:hidden  w-[233px] -z-10 -top-24 -right-14 " loading="lazy" alt="">
+            <div class="banking2_cards w-full grid grid-cols-3 max-[480px]:grid-cols-1 max-[768px]:grid-cols-1 gap-x-4 gap-y-10">
+                <!-- first simple box -->
               <div class="flex items-center"> 
                 <h2 class="font-mullish text-deepBlueHead leading-[3.375rem] text-4xl font-extrabold ">New in the <span class="text-lightBlue500">Razorpay</span>
                     Product Suite</h2>
@@ -948,7 +952,7 @@ fill="#fff"
     <!-- banking2 ends from here-->
 <!-- feature section -->
 
-         <section class="features relative z-[1000] w-full max-w-full min-h-[450px] max-[480px]:-mt-[250px]  -mt-[90px] font-mullish text-white bg-[url(assets/images/core-features-sectionBg.svg)] bg-no-repeat bg-cover bg-center">
+         <section class="features relative z-[1000] w-full max-w-full min-h-[450px] max-[480px]:-mt-[250px] max-[768px]:-mt-[200px]  -mt-[90px] font-mullish text-white bg-[url(assets/images/core-features-sectionBg.svg)] bg-no-repeat bg-cover bg-center">
 
 
               <div class="feature_container w-11/12 max-w-[1080px] relative  pt-4 mx-auto">
@@ -956,7 +960,7 @@ fill="#fff"
                                  <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
                                  <p class="text-center max-w-[450px] mx-auto">Empower your business with all the right tools to accept online payments and provide the best customer experience </p>
                                  <!-- core feature box -->
-                                 <div class="core_feature_box grid grid-cols-4 max-[480px]:grid-cols-1 gap-[2rem] mt-8">
+                                 <div class="core_feature_box grid grid-cols-4 max-[480px]:grid-cols-1 max-[768px]:grid-cols-2 gap-[2rem] mt-8">
                                       <!-- core_feature_box1 -->
                                       <div class="core_feature_box1 ">
                                         <img src="assets/images/instant-activation-icon.svg" alt="">
@@ -1021,8 +1025,10 @@ fill="#fff"
 
 
 <!-- businesses section -->
-<section class="businesses_section max-w-full max-[480px]:max-h-full max-h-[700px]  bg-[#f5f8fe] overflow-hidden max-[480px]:-mt-[330px] -mt-[200px] relative  font-mullish">
-      <div class="businesses_container  w-11/12 flex max-[480px]:flex-col max-w-[1080px] mx-auto">
+<section class="businesses_section max-w-full max-[480px]:max-h-full max-[768px]:max-h-full max-h-[700px]  bg-[#f5f8fe] overflow-hidden max-[480px]:-mt-[330px] -mt-[200px] relative  font-mullish">
+    <!-- main container -->
+      <div class="businesses_container  w-11/12 flex max-[480px]:flex-col max-[768px]:flex-col max-w-[1080px] mx-auto">
+        <!-- left -->
          <div class="left max-w-[600px] pt-72 pb-20">
           <h2 class="leading-5 text-deepBlueHead font-extrabold font-mullish text-xl">Join the 50,00,000 businesses using Razorpay</h2>
           <div class="w-6 h-1 bg-greenLight  mt-4 mb-6"></div>
@@ -1039,8 +1045,9 @@ fill="#fff"
                 >
               </div>
          </div>
-         <div class="right max-[480px]:w-full w-[800px] h-[600px] overflow-y-hidden  relative">
-           <div class="absolute w-full h-[100px] max-[480px]:top-0 top-[162px] z-20" style="background: linear-gradient(180deg, #f4f8ff, #fff0)"></div>
+         <!-- right -->
+         <div class="right max-[480px]:w-full max-[768px]:w-full w-[800px] h-[600px] overflow-y-hidden  relative">
+           <div class="absolute w-full h-[100px] max-[480px]:top-0 max-[768px]:top-0 top-[162px] z-20" style="background: linear-gradient(180deg, #f4f8ff, #fff0)"></div>
                   <img class="companiesList  absolute  z-10 " src="assets/images/comanies.png" alt="" >
            <div class="absolute w-full h-[200px] bottom-0 z-20" style="background: linear-gradient(0deg, #f4f8ff, #fff0)"></div>
            
@@ -1048,36 +1055,37 @@ fill="#fff"
       </div>
 </section>
 <!-- businesses ends section here -->
+
   <!-- testimonial section -->
   <section class="testimonial_section pt-24 w-full relative text-center">
     <!--testimonial_container main  -->
                    <div class="testimonial_container relative pt-0 py-20 w-11/12 max-w-[1300px] mx-auto">
-                                   <img src="assets/images/feature-section1-dottedrows.png" class="absolute max-[480px]:hidden w-[200px] -z-10 top-8 left-[3.75rem]" alt="">
+                                   <img src="assets/images/feature-section1-dottedrows.png" class="absolute max-[768px]:hidden w-[200px] -z-10 top-8 left-[3.75rem]" alt="">
                                    <h2 class="font-extrabold text-2xl font-mullish">An Experience <br>
                                     People Love to Talk About</h2>
                                     <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
                                     <!-- button -->
                                     <!-- button right -->
 
-                                    <button class=" max-[480px]:hidden absolute w-[100px] h-[100px] rounded-full left-0 top-[40%] bg-[#f4f8ff]  flex items-center justify-center ">
+                                    <button class=" max-[768px]:hidden absolute w-[100px] h-[100px] rounded-full left-0 top-[40%] bg-[#f4f8ff]  flex items-center justify-center ">
                                         <div class="w-[65%] h-[65%] rounded-full bg-[#f4f8ff] mix-blend-multiply flex justify-center items-center "><i class="fa-solid text-gray-400 fa-chevron-left fa-lg"></i></div>
                                     </button>
                                     <!-- button left -->
 
-                                    <button class=" max-[480px]:hidden absolute w-[100px] h-[100px] rounded-full right-0 top-[40%] bg-[#f4f8ff]  flex items-center justify-center ">
+                                    <button class=" max-[768px]:hidden absolute w-[100px] h-[100px] rounded-full right-0 top-[40%] bg-[#f4f8ff]  flex items-center justify-center ">
                                         <div class="w-[65%] h-[65%] rounded-full bg-[#f4f8ff] mix-blend-multiply flex justify-center items-center "><i class="fa-solid text-gray-400 fa-chevron-right fa-lg"></i></div>
                                     </button>
                                     <!-- button ends -->
                                     <!-- content slider box flex -->
-                                        <div class="flex items-center max-[480px]:flex-col gap-x-[10rem] my-20 max-w-[960px] mx-auto">
+                                        <div class="flex items-center max-[768px]:flex-col gap-x-[10rem] my-20 max-w-[960px] mx-auto">
                                             <!-- left section -->
                                                  <div class="left max-w-[600px]">
                                                                 <img src="assets/images/testimonial.jpg" width="320px" height="320px" loading="lazy" class="rounded-xl object-cover" alt="">
                                                  </div>
                                              <!-- left section ends-->
                                               <!-- right section -->
-                                              <div class="right flex flex-col max-w-[400px] gap-y-1 max-[480px]:items-center items-start">
-                                                             <img src="assets/images/quotes.svg" width="35px" height="40px" class="-mb-2 max-[480px]:mt-2" alt="">
+                                              <div class="right flex flex-col max-w-[400px] gap-y-1 max-[768px]:items-center items-start">
+                                                             <img src="assets/images/quotes.svg" width="35px" height="40px" class="-mb-2 max-[768px]:mt-2" alt="">
                                                              <p class="font-extralight text-left leading-10 text-3xl max-[480px]:text-center ">Acquire Customers From New Customer Segments</p>
                                                              <a href="#" class="text-sm font-extralight underline italic">Learn More</a>
                                                              <!-- name designation image -->
@@ -1110,10 +1118,10 @@ fill="#fff"
   <!-- testimonial section ends -->
 
     <!-- supercharge section starts here -->
-<div class="supercharge min-h-[526px] flex items-center max-[480px]:-mt-36 relative z-10 ">
+<div class="supercharge min-h-[526px] flex items-center max-[768px]:-mt-36 relative z-10 ">
     <section class="supercharge_section "></section>
-<div class="w-11/12 max-w-[1080px] max-[480px]:my-72 mx-auto ">
-    <div class="content flex max-[480px]:flex-col max-[480px]:gap-0 gap-14">
+<div class="w-11/12 max-w-[1080px] max-[768px]:my-72 mx-auto ">
+    <div class="content flex max-[768px]:flex-col  max-[768px]:gap-0 gap-14">
 
         
         <!-- left -->
@@ -1135,19 +1143,20 @@ fill="#fff"
         </div>
         <!-- right -->
         <div class="right">
-           <img class="mt-4 max-[480px]:hidden relative" src="assets/images/ctaImg.svg" width="240px"
+           <img class="mt-4 max-[480px]:hidden max-[768px]:hidden relative" src="assets/images/ctaImg.svg" width="240px"
             height="282px" loading="lazy" alt="">
         </div>
     </div>
 </div>
 </div>
 <!-- supercharge section ends here -->
-<footer class=" footer_section w-full pt-48 max-[480px]:-mt-[450px] -mt-[300px] font-mullish pb-6">
-   <div class="footer_container pb-10 pt-[50px] max-[480px]:pl-0 px-8 flex flex-wrap justify-between max-[480px]:flex-col sm:flex-col lg:flex-row gap-8 mx-auto w-11/12 max-w-[1080px]">
+<footer class=" footer_section w-full pt-48 max-[768px]:-mt-[400px] -mt-[300px] font-mullish pb-6">
+   <div class="footer_container pb-10 pt-[50px] max-[768px]:pl-0 px-8 flex flex-wrap justify-between   gap-8 mx-auto w-11/12 max-w-[1080px]">
+<!-- footer left columns -->
 
-    <div class="max-w-[248px] max-[480px]:max-w-full">
+    <div class="max-w-[248px] max-[768px]:max-w-full">
         <div class="mt-10 max-w-340px " >
-            <img src="assets/images/logo-dark.svg" width="120px" height="24px" alt="">
+            <img src="assets/images/logo-dark.svg" width="120px" height="24px" class="max-[480px]:text-center" alt="">
             <p class="text-sm  text-grayText mt-3 leading-6">Razorpay is the only payments solution in India that allows businesses to accept, process and disburse payments with its product suite. It gives you access to all payment modes including credit card, debit card, netbanking, UPI and popular wallets including JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money and PayZapp.</p>
             <p class="text-sm  text-grayText mt-3 leading-6">RazorpayX supercharges your business banking experience, bringing effectiveness, efficiency, and excellence to all financial processes. With RazorpayX, businesses can get access to fully-functional current accounts, supercharge their payouts and automate payroll compliance.</p>
             <p class="text-sm  text-grayText mt-3 leading-6">Manage your marketplace, automate bank transfers, collect recurring payments, share invoices with customers and avail working capital loans - all from a single platform. Fast forward your business with Razorpay.</p>
@@ -1164,9 +1173,9 @@ fill="#fff"
             </div>
         </div>
     </div>
-<!-- footer left columns -->
-    <div class="flex flex-wrap">
-        <div class="flex flex-wrap p-3 flex-col">
+<!-- footer right columns -->
+    <div class="flex flex-wrap ">
+        <div class="flex flex-wrap max-[768px]:pl-0 p-3 flex-col">
             <p class="text-base uppercase text-gray2 mt-6 font-bold leading-3">BANKING PLUS</p>
             <a class="text-lightBlue500 hover:text-grayBlue transition-all duration-200 outline-none outline-offset-2 leading-7 mt-2" href="#">RazorpayX</a>
             <a class="text-lightBlue500 hover:text-grayBlue transition-all duration-200 outline-none outline-offset-2 leading-7 mt-2" href="#">Current Accounts</a>
@@ -1193,7 +1202,7 @@ fill="#fff"
             <a class="text-lightBlue500 hover:text-grayBlue transition-all duration-200 outline-none outline-offset-2 leading-7 mt-2" href="#">Checkout Demo</a>
             <a class="text-lightBlue500 hover:text-grayBlue transition-all duration-200 outline-none outline-offset-2 leading-7 mt-2" href="#">RazorpayX Payroll</a>
         </div>
-        <div class="flex flex-wrap p-3 flex-col">
+        <div class="flex flex-wrap max-[768px]:pl-0 p-3 flex-col">
             <p class="text-base uppercase text-gray2 mt-6 font-bold leading-3">ACCEPT PAYMENTS</p>
             <a class="text-lightBlue500 hover:text-grayBlue transition-all duration-200 outline-none outline-offset-2 leading-7 mt-2" href="#">Payment Gateway</a>
             <a class="text-lightBlue500 hover:text-grayBlue transition-all duration-200 outline-none outline-offset-2 leading-7 mt-2" href="#">Payment Pages</a>
@@ -1227,7 +1236,7 @@ fill="#fff"
             <a class="text-lightBlue500 hover:text-grayBlue transition-all duration-200 outline-none outline-offset-2 leading-7 mt-2" href="#">CAGR  Calculator  <span class="inline-block text-xs text-white bg-green-500 rounded-sm font-bold p-1">NEW</span></a>
 
         </div>
-        <div class="flex flex-wrap p-3 flex-col">
+        <div class="flex flex-wrap max-[768px]:pl-0 p-3 flex-col">
             <p class="text-base uppercase text-gray2 mt-6 font-bold leading-3">COMPANY</p>
             <a class="text-lightBlue500 hover:text-grayBlue transition-all duration-200 outline-none outline-offset-2 leading-7 mt-2" href="#">About Us</a>
             <a class="text-lightBlue500 hover:text-grayBlue transition-all duration-200 outline-none outline-offset-2 leading-7 mt-2" href="#">Careers <span class="inline-block text-xs text-white bg-green-500 rounded-sm font-bold p-1">We're hiring!</span></a>
