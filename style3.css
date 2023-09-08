@@ -1,3 +1,6 @@
+/*
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -742,6 +745,10 @@ video {
   margin-bottom: -0.5rem;
 }
 
+.-mt-36 {
+  margin-top: -9rem;
+}
+
 .-mt-\[200px\] {
   margin-top: -200px;
 }
@@ -772,6 +779,10 @@ video {
 
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mt-10 {
@@ -812,14 +823,6 @@ video {
 
 .mt-\[5\.5rem\] {
   margin-top: 5.5rem;
-}
-
-.-mt-36 {
-  margin-top: -9rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
 }
 
 .box-border {
@@ -870,6 +873,10 @@ video {
   height: 3rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-3 {
   height: 0.75rem;
 }
@@ -906,10 +913,6 @@ video {
   height: 100%;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .max-h-\[300px\] {
   max-height: 300px;
 }
@@ -944,6 +947,10 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-11 {
+  width: 2.75rem;
 }
 
 .w-11\/12 {
@@ -1000,10 +1007,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-11 {
-  width: 2.75rem;
 }
 
 .min-w-\[2rem\] {
@@ -1084,20 +1087,20 @@ video {
   resize: both;
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1144,6 +1147,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -1158,10 +1165,6 @@ video {
 
 .gap-\[2rem\] {
   gap: 2rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .gap-x-4 {
@@ -1304,6 +1307,11 @@ video {
   background-color: rgb(43 132 234 / var(--tw-bg-opacity));
 }
 
+.bg-lightBlue300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 148 237 / var(--tw-bg-opacity));
+}
+
 .bg-lightBlue500 {
   --tw-bg-opacity: 1;
   background-color: rgb(11 114 231 / var(--tw-bg-opacity));
@@ -1314,9 +1322,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-lightBlue300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 148 237 / var(--tw-bg-opacity));
+.bg-\[url\(\.\/assets\/images\/CTABg\.svg\)\] {
+  background-image: url(./assets/images/CTABg.svg);
+}
+
+.bg-\[url\(\.\/assets\/images\/feature-section-2BG\.svg\)\] {
+  background-image: url(./assets/images/feature-section-2BG.svg);
+}
+
+.bg-\[url\(\.\/assets\/images\/svgexport-1\.svg\)\] {
+  background-image: url(./assets/images/svgexport-1.svg);
 }
 
 .bg-\[url\(assets\/images\/core-features-sectionBg\.svg\)\] {
@@ -1500,6 +1515,14 @@ video {
   padding-bottom: 500px;
 }
 
+.pl-0 {
+  padding-left: 0px;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1540,6 +1563,10 @@ video {
   padding-top: 0px;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
 .pt-24 {
   padding-top: 6rem;
 }
@@ -1552,8 +1579,16 @@ video {
   padding-top: 12rem;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
 .pt-72 {
   padding-top: 18rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .pt-\[16rem\] {
@@ -1562,26 +1597,6 @@ video {
 
 .pt-\[50px\] {
   padding-top: 50px;
-}
-
-.pl-0 {
-  padding-left: 0px;
-}
-
-.pl-3 {
-  padding-left: 0.75rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
 }
 
 .text-left {
@@ -1744,6 +1759,11 @@ video {
   color: rgb(82 90 118 / var(--tw-text-opacity));
 }
 
+.text-grayBlue {
+  --tw-text-opacity: 1;
+  color: rgb(52 74 108 / var(--tw-text-opacity));
+}
+
 .text-grayText {
   --tw-text-opacity: 1;
   color: rgb(129 133 151 / var(--tw-text-opacity));
@@ -1772,11 +1792,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-grayBlue {
-  --tw-text-opacity: 1;
-  color: rgb(52 74 108 / var(--tw-text-opacity));
 }
 
 .underline {
