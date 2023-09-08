@@ -15,3 +15,12 @@
         background-size: cover!important;
        }
 }
+@media  (max-width:1024px) {
+    .features {
+        background-size: cover!important;
+       }
+       .supercharge_section{
+        background-size: cover!important;
+       }
+      
+}
